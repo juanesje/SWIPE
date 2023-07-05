@@ -1,0 +1,152 @@
+body {
+    background: linear-gradient(to bottom, purple 70%, white 50%);   
+  }
+  
+   
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: left;
+    height: 20px;
+    padding-left: 55px;
+    margin-top: 0;
+  }
+  
+  li {
+    text-align: center;
+    font-size: 15px; 
+    text-transform: bold;
+    font-family: sans-serif;
+  }
+  
+  a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 20px;
+  }
+  
+  .imageseccion {
+    float: left;
+    margin-left: 145px;
+    height: 60px;
+    padding-right: 120px;
+  }
+  
+  .boton-Ingresa {
+    margin-left: 190px;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 70px;
+    color: #ffffff;   
+    text-decoration: none;
+    width: 100px;
+    height: 10px;
+    text-align: center;
+    line-height: 10px;
+    margin-top: 10px;
+    text-transform: bold;
+    font-family: sans-serif;
+    background-color:#9619cb; 
+  }
+  .Container{
+    display: block;
+    justify-content: left;
+    gap: 100px;
+
+    }
+  .Payments{
+        margin-top: 150px;
+        height: 500px;
+        font-size: 90px;
+        color: #000000;
+        text-align: left;
+        margin-left: 150px;
+        text-transform: bold;
+        font-family: sans-serif;
+        width: 550px;
+        height: 100px;
+    }
+  .Parrafo-1{
+      font-size: 20px;
+      color: #000000;
+      text-align: left;
+      margin-left: 160px;
+      text-transform: bold;
+      font-family: sans-serif;
+      width: 550px;
+      height: 75px;
+      margin-top: 250px; 
+    }
+  .imagen-seccion {
+    width: 355px;
+    height: auto; 
+    float: right;
+    margin-right: 145px;
+    margin-top: -50px;
+    }
+  .button {
+    margin-left: 160px;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 40px;
+    color: #ffffff;
+    text-decoration: none;
+    width: 120px;
+    height: 20px;
+    text-align: left  ;
+    line-height: 10px;
+    margin-top: 15px;
+    text-transform: bold;
+    font-family: sans-serif;
+    background-color:#9619cb;
+    
+    }
+  .button-abierto{
+    margin-left: 0px;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 70px;
+    color: #ffffff;
+    text-decoration: none;
+    width: 150px;
+    height: 15px;
+    text-align: center;
+    line-height: 10px;
+    margin-top: 7px;
+    text-transform: bold;
+    font-family: sans-serif;    
+  }
+  .Conjuntoimagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 120px;
+    height: 150px;
+    width: 1150px;
+    padding: 70px;
+ }
+          
+  .Conjuntoimagenes img {
+    width: auto; 
+    height: 65px; 
+    margin: 30px;
+  }
+
+  .button .icon {
+    margin-left: 5px;
+    vertical-align: -2px;
+  }
+  .button:hover .icon{
+    margin-left: 10px;
+    transition: all 0.5s;
+  }
+
+  .button-abierto .icono{
+    margin-left: 5px;
+    vertical-align: -2px;  }
+  .button-abierto:hover .icono {
+    margin-left: 10px;
+    transition: all 0.5s; 
+  }
