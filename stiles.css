@@ -12,7 +12,7 @@ html, body {
 }
 
 .parabody {
-  background: repeating-linear-gradient(-10deg, rgb(214, 214, 214) 0, rgb(255, 255, 255) 63%, rgb(144, 34, 203) 63%, rgb(215, 123, 24) 100%);
+  background: repeating-linear-gradient(-10deg, rgb(255, 255, 255) 0, rgb(255, 255, 255) 63%, rgb(144, 34, 203) 63%, rgb(215, 123, 24) 100%);
 }
 
 .menu-contenido {
@@ -24,10 +24,30 @@ html, body {
   margin-top: 0;
   font-weight: bold;
 }
-
+.menucontenidodrop{
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  width: 300px;
+  height: 0;
+  background: rgba(150, 25, 203, 1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  display: none;
+}
+.menucontenidodrop.open{
+  height: 500px;
+}
+.menucontenidodrop li{
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 li {
   text-align: center;
-  font-size: 13px;
+  font-size: 15px;
   text-transform: bold;
   font-family: sans-serif;
   text-decoration: #ffffff;
@@ -53,7 +73,7 @@ a {
   padding-right: 120px;
   margin-top: 5px;
 }
-.button-burguer {
+.buttonburguer {
   display: none;
   width: 30px;
   height: 20px;
@@ -63,7 +83,7 @@ a {
   border: none;
 }
 .boton-Ingresa {
-    margin-left: 135px;
+    margin-left: 195px;
     margin-right: auto;
     display: flex;
     align-items: center;
@@ -94,7 +114,7 @@ a {
 .payments {
   margin-top: 150px;
   height: 500px;
-  font-size: 80px;
+  font-size: 85px;
   color: #000000;
   text-align: left;
   margin-left: 150px;
@@ -118,12 +138,13 @@ a {
 }
 
 .imagen-seccion {
-  width: 355px;
+  width: 385px;
   height: auto;
   float: right;
   margin-right: 110px;
   margin-top: 85px;
   padding: 15px;
+  margin-bottom: -40px;
 }
 
 .button {
@@ -148,7 +169,6 @@ a {
 }
 .button:hover {
   background-color: rgba(150, 25, 203, 0.5);
-
 }
 
 .button-abierto {
@@ -175,14 +195,16 @@ a {
   align-items: center;
   margin-left: 100px;
   height: 300px;
-  width: 1150px;
-  padding: 70px;
-  margin-top: 20px;
+  width: 1300px;
+  padding: 100px;
+  margin-top: -100px;
+  margin-bottom: 100px;
+
 }
 
 .conjuntoimagenes img {
   width: auto;
-  height: 60px;
+  height: 70px;
   margin: 20px;
 }
 
@@ -200,10 +222,139 @@ a {
   margin-left: 10px;
   transition: all 0.5s;
 }
+/*Secion2*/
+.container2 {
+  background-color: #eceaea;
+}
+
+.MiniTitle{
+  display: block;
+  color: #9619cb;
+  text-decoration: none;
+  padding: 20px;
+  margin-left: 150px;
+  font-family: sans-serif;
+}
+.All-the{
+  margin-top: 5px;
+  height: 600px;
+  font-size: 35px;
+  color: #000000;
+  text-align: left;
+  margin-left: 165px;
+  text-transform: bold;
+  font-family: sans-serif;
+  width: 550px;
+  height: 100px;
+  line-height: 50px;
+}
+.Parrafo21{
+  font-size: 17px;
+  color: #000000;
+  text-align: left;
+  margin-left: 160px;
+  text-transform: bold;
+  font-family: sans-serif;
+  width: 540px;
+  height: 30px;
+  margin-top: 50px;
+}
+.Parrafo22{
+  font-size: 17px;
+  color: #000000;
+  text-align: left;
+  text-transform: bold;
+  font-family: sans-serif;
+  width: 575px;
+  height: 60px;
+  margin-top: 50px;
+}
+.link-style {
+  display: inline-block;
+  color: #9619cb;
+  margin: 0;
+  padding: 0;
+}
+.link-style:hover{
+  color: rgba(150, 25, 203, 0.5);
+  transition: 0.5;
+}
+.ParrafoCont2 {
+  display: flex;
+  gap: 30px;
+  height: 0px;
+}
+.buttonCont2{
+  margin-left: 155px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 40px;
+  color: #ffffff;
+  text-decoration: none;
+  width: 160px;
+  height: 40px;
+  text-align: left;
+  line-height: 10px;
+  margin-top: 190px;
+  text-transform: bold;
+  font-family: sans-serif;
+  background-color: rgba(150, 25, 203, 1);
+  font-weight: bold;
+  transition: all 0.5s;
+}
+.buttonCont2 .icon {
+  margin-left: 5px;
+  vertical-align: -2px;
+}
+
+.buttonCont2:hover .icon {
+  margin-left: 10px;
+  transition: all 0.5s;
+}
+.buttonCont2:hover{
+  background-color: rgba(150, 25, 203, 0.5);
+}
+.Barra1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin-top: 100px;
+}
+.Tarjeta {
+  width: 350px; 
+  height: auto;
+  margin-left: 155px;
+  float: left;
+  box-shadow: 0 0 10 rgba(0, 0, 0, 0.7);
+}
+.Celular {
+  width: 350px;
+  height: auto;
+  float: left;
+  margin-left: 155px;
+  margin-top: -225px;
+} 
+.Panel1{
+  width: 750px; 
+  height: auto;
+  float: left;
+  margin-right: 200px;
+}
+.Panel2{
+  width: 750px; 
+  height: 410px;
+  float: left;
+  margin-top: 25px;
+}
 @media screen and (width <= 768px ) {
   .parabody {
-    background: repeating-linear-gradient(-10deg, rgb(214, 214, 214) 0, rgb(255, 255, 255) 68%, rgb(144, 34, 203) 68%, rgb(215, 123, 24) 100%);
+    background: repeating-linear-gradient(-10deg, rgb(255, 255, 255) 0, rgb(255, 255, 255) 68%, rgb(144, 34, 203) 68%, rgb(215, 123, 24) 100%);
   }
+ .menucontenidodrop{
+  display: block;
+ }
   .imagen-seccion{
     display: flex;
     margin-right: -30px;
@@ -254,7 +405,7 @@ a {
     margin: 0px;
     margin-top: 30px;
   }
-  .button-burguer {
+  .buttonburguer {
     display: block;
     margin-left: 30px;
     justify-content: flex-end; 
@@ -265,6 +416,109 @@ a {
   .menu-contenido{
     display: none;
   }
+/*Seccion 2*/
+/*Seccion2*/
+
+.MiniTitle{
+  margin-left: 0px;
+}
+.All-the{
+  margin-left: 20px;
+  width: 700px;
+  height: 50px;
+}
+.Parrafo21{
+  font-size: 17px;
+  color: #000000;
+  text-align: left;
+  margin-left: 20px;
+  text-transform: bold;
+  font-family: sans-serif;
+  width: 350px;
+  height: 30px;
+  margin-top: 50px;
+}
+.Parrafo22{
+  font-size: 17px;
+  color: #000000;
+  text-align: left;
+  text-transform: bold;
+  font-family: sans-serif;
+  width: 350px;
+  height: 60px;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+.link-style {
+  display: inline-block;
+  color: #9619cb;
+  margin: 0;
+  padding: 0;
+}
+.link-style:hover{
+  color: rgba(150, 25, 203, 0.5);
+  transition: 0.5;
+}
+.ParrafoCont2 {
+  gap: 20px;
+  height: 0px;
+}
+.buttonCont2{
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 40px;
+  color: #ffffff;
+  text-decoration: none;
+  width: 160px;
+  height: 40px;
+  text-align: left;
+  line-height: 10px;
+  margin-top: 225px;
+  text-transform: bold;
+  font-family: sans-serif;
+  background-color: rgba(150, 25, 203, 1);
+  font-weight: bold;
+  transition: all 0.5s;
+}
+.buttonCont2:hover{
+  background-color: rgba(150, 25, 203, 0.5);
+}
+.Barra1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin-top: 70px;
+}
+.Tarjeta {
+  width: 225px; 
+  height: auto;
+  margin-left: 20px;
+  float: left;
+}
+.Celular {
+  width: 225px;
+  height: auto;
+  float: left;
+  margin-left: 20px;
+  margin-top: -120px;
+} 
+.Panel1{
+  width: 470px; 
+  height: auto;
+  float: left;
+  margin-right: 200px;
+  margin-left: 20px;
+}
+.Panel2{
+  width: 470px; 
+  height: 300px;
+  float: left;
+  margin-top: 25px;
+  margin-left: 20px;
+}
 
 }
 @media screen and (width <= 450px ) {
@@ -274,7 +528,7 @@ a {
     box-sizing: border-box;
   }
   .parabody {
-    background: repeating-linear-gradient(-10deg, rgb(214, 214, 214) 0, rgb(255, 255, 255) 74.5%, rgb(144, 34, 203) 74.5%, rgb(215, 123, 24) 100%);
+    background: repeating-linear-gradient(-10deg, rgb(255, 255, 255) 0, rgb(255, 255, 255) 74.5%, rgb(144, 34, 203) 74.5%, rgb(215, 123, 24) 100%);
   }
   .imagen-seccion{
     display: none;
@@ -321,7 +575,7 @@ a {
     margin: 0px;
     margin-top: 30px;
   }
-  .button-burguer {
+  .buttonburguer {
     display: block;
     margin-left: 30px;
     justify-content: flex-end; 
@@ -332,5 +586,110 @@ a {
   .menu-contenido{
     display: none;
   }
+/*Seccion2*/
 
+.MiniTitle{
+  margin-left: 0px;
+}
+.All-the{
+  height: 600px;
+  font-size: 30px;
+  margin-left: 20px;
+  text-transform: bold;
+  font-family: sans-serif;
+  width: 400px;
+  height: 100px;
+  line-height: 50px;
+}
+.Parrafo21{
+  font-size: 17px;
+  color: #000000;
+  text-align: left;
+  margin-left: 20px;
+  text-transform: bold;
+  font-family: sans-serif;
+  width: 370px;
+  height: 30px;
+  margin-top: 50px;
+}
+.Parrafo22{
+  font-size: 17px;
+  color: #000000;
+  text-align: left;
+  text-transform: bold;
+  font-family: sans-serif;
+  width: 370px;
+  height: 60px;
+  margin-top: 150px;
+  margin-left: 20px;
+}
+.link-style {
+  display: inline-block;
+  color: #9619cb;
+  margin: 0;
+  padding: 0;
+}
+.link-style:hover{
+  color: rgba(150, 25, 203, 0.5);
+  transition: 0.5;
+}
+.ParrafoCont2 {
+  display: inline-block;
+  gap: 30px;
+  height: 0px;
+}
+.buttonCont2{
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 40px;
+  color: #ffffff;
+  text-decoration: none;
+  width: 160px;
+  height: 40px;
+  text-align: left;
+  line-height: 10px;
+  margin-top: 50px;
+  text-transform: bold;
+  font-family: sans-serif;
+  background-color: rgba(150, 25, 203, 1);
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.Barra1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin-top: 70px;
+}
+.Tarjeta {
+  width: 100px; 
+  height: auto;
+  margin-left: 20px;
+  float: left;
+}
+.Celular {
+  width: 100px;
+  height: auto;
+  float: left;
+  margin-left: 20px;
+  margin-top: -50px;
+} 
+.Panel1{
+  width: 250px; 
+  height: auto;
+  float: left;
+  margin-right: 200px;
+  margin-left: 25px;
+}
+.Panel2{
+  width: 250px; 
+  height: 150px;
+  float: left;
+  margin-top: 25px;
+  margin-left: 20px;
+}
 }
